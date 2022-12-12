@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: #222;
+}
+h1{
+    color: azure;
+}
+#header{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(28, 192, 137);
+    height: 50px;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 0 80px;
+    padding-top: 20px;
+    
+    position: relative;
+}
+nav a{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+nav a:hover{
+    color: black;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    
+
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+pre{
+    white-space: pre-line;
+}
